@@ -60,7 +60,7 @@ function initPage() {
   jazz.style.display = "none";
   electronic.style.display = "none";
   }
-
+initPage();
 
 //display music categories when continue is clicked
 continueBtn.addEventListener("click", showMusic);
@@ -118,4 +118,8 @@ function showElec() {
   electronic.style.display = "block";
   timeline.style.display ="block";
   }
-initPage();
+
+  //Go Back Button
+function goBack() {
+  window.history.go();
+}
