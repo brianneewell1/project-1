@@ -16,24 +16,25 @@
   <body>
    
     <!-- first page -->
-    <div class="jumbotron text-center" id="firstPage">
+    <div class="jumbotron text-center" id="firstPage" style="display:none">
       <h1>Songs of us </h1>
       <p>This is a music shuffling website for people who have difficulties picking music</p>
       <div style="padding:5px"><button id="continueBtn" type="button" class="btn btn-primary">Continue</button></div>
     </div>
   
      <!--Progressive bar-->
-     <div id="myProgress">
+     <div id="myProgress" style="display:none">
         <div id="myBar"></div>
       </div>
     <!-- pick music category -->
-    <div id="category" class="container is-visible">
+    <div id="category" style="display:none" class="container">
       <div class="row">
         <h1>choose from the following music categories</h1>
         <div style="padding:5px"><button type="button" class="" id="countryBtn">Country</button></div>
         <div style="padding:5px"><button type="button" class="" id="jazzBtn">Jazz</button></div>
         <div style="padding:5px"><button type="button" class="" id="rockBtn">Rock</button></div>
         <div style="padding:5px"><button type="button" class="" id="electronicBtn">Electronic</button></div>
+      </div>
       </div>
     <!-- Country sub-category -->
     <div id="country" class="container is-visible">
@@ -84,12 +85,12 @@
   </div>
 </div>
     <!-- Timeline -->
-    <div class="slidecontainer" id="timeline">
+    <div class="slidecontainer" id="timeline" style="display:none">
         <input type="range" min="1950" max="2020" value="1" class="slider" id="myRange">
       </div>
   
     <!-- message box -->
-    <button type="button" class="collapsible" id="thanksBtn">Thank you for choosing song of Us</button>
+    <button type="button" class="collapsible" id="thanksBtn" style="display:none">Thank you for choosing song of Us</button>
     <div class="content">
       <p>This is an app to fulfill our project one requirement of coding bootcamp at the university of Utah. Four of us have been focus on this project for one week. Hope you like it</p>
     </div>
@@ -97,93 +98,4 @@
  
 </body>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
-</head>
-<body>
-
-  <body>
-   
-    <!-- first page -->
-    <div class="jumbotron text-center">
-      <h1>Songs of us </h1>
-      <p>This is a music shuffling website for people who have difficulties picking music</p>
-      <div style="padding:5px"><button id="continue" type="button" class="btn btn-primary">Continue</button></div>
-    </div>
-  
-     <!--Progressive bar-->
-     <div id="myProgress">
-        <div id="myBar"></div>
-      </div>
-    <!-- pick music category -->
-    <div id="subcategory" class="container is-visible">
-      <div class="row">
-        <h1>choose from the following music categories</h1>
-        <div style="padding:5px"><button type="button" class="">Country</button></div>
-        <div style="padding:5px"><button type="button" class="">Jazz</button></div>
-        <div style="padding:5px"><button type="button" class="">Rock</button></div>
-        <div style="padding:5px"><button type="button" class="">Electronic</button></div>
-      </div>
-    <!-- sub-category -->
-    <div id="sub-category" class="container is-visible">
-      <div class="row">
-        <div class="form-group">
-          <h1>Country sub-category</h1>
-          <div style="padding:5px"><button type="button" class="">one</button></div>
-          <div style="padding:5px"><button type="button" class="">two</button></div>
-          <div style="padding:5px"><button type="button" class="">three</button></div>
-          <div style="padding:5px"><button type="button" class="">four</button></div>
-        </div>
-      </div>
-    </div>
- <!-- sub-category -->
- <div id="sub-category" class="container is-visible">
-  <div class="row">
-    <div class="form-group">
-      <h1>Jazz sub-category</h1>
-      <div style="padding:5px"><button type="button" class="">one</button></div>
-      <div style="padding:5px"><button type="button" class="">two</button></div>
-      <div style="padding:5px"><button type="button" class="">three</button></div>
-      <div style="padding:5px"><button type="button" class="">four</button></div>
-    </div>
-  </div>
-</div>
-<!-- sub-category -->
-<div id="subcategory" class="container is-visible">
-  <div class="row">
-    <div class="form-group">
-      <h1>Rock sub-category</h1>
-      <div style="padding:5px"><button type="button" class="">one</button></div>
-      <div style="padding:5px"><button type="button" class="">two</button></div>
-      <div style="padding:5px"><button type="button" class="">three</button></div>
-      <div style="padding:5px"><button type="button" class="">four</button></div>
-    </div>
-  </div>
-</div>
-<!-- sub-category -->
-<div id="sub-category" class="container is-visible">
-  <div class="row">
-    <div class="form-group">
-      <h1>electronic sub-category</h1>
-      <div style="padding:5px"><button type="button" class="btn btn-primary wrong">one</button></div>
-      <div style="padding:5px"><button type="button" class="btn btn-primary wrong">two</button></div>
-      <div style="padding:5px"><button type="button" class="btn btn-primary wrong">three</button></div>
-      <div style="padding:5px"><button type="button" class="btn btn-primary right">four</button></div>
-    </div>
-  </div>
-</div>
-    <!-- Timeline -->
-    <div class="slidecontainer">
-        <input type="range" min="1950" max="2020" value="1" class="slider" id="myRange">
-      </div>
-  
-    <!-- message box -->
-    <button type="button" class="collapsible">Thank you for choosing song of Us</button>
-    <div class="content">
-      <p>This is an app to fulfill our project one requirement of coding bootcamp at the university of Utah. Four of us have been focus on this project for one week. Hope you like it</p>
-    </div>
-  <script src="./app.js"></script>
- 
-</body>
-
-</html>

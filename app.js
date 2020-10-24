@@ -52,6 +52,7 @@ var thanksBtn = document.getElementById("thanksBtn");
 
 //hide other pages upon loading
 function initPage() {
+  firstPage.style.display ="block";
   myProgress.style.display = "none";
   category.style.display = "none";
   country.style.display = "none";
@@ -60,26 +61,19 @@ function initPage() {
   electronic.style.display = "none";
   }
 
-//var output = document.getElementById("demo");
-//output.innerHTML = myRange.value; // Display the default slider value
 
-// Update the current slider value (each time you drag the slider handle)
-myRange.oninput = function() {
-  output.innerHTML = this.value;
+//display music categories when continue is clicked
+continueBtn.addEventListener("click", showMusic);
+
+function showMusic() {
+firstPage.style.display = "none";
+myProgress.style.display = "block";
+category.style.display = "block";
+country.style.display = "none";
+rock.style.display = "none";
+jazz.style.display = "none";
+electronic.style.display = "none";
 }
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
 initPage();
