@@ -11,9 +11,10 @@ var myBar = document.getElementById("myBar");
 //music category
 var category = document.getElementById("category");
 var countryBtn = document.getElementById("countryBtn");
-var jazzBtn = document.getElementById("jazzBtn");
+var popBtn = document.getElementById("popBtn");
 var rockBtn = document.getElementById("rockBtn");
-var electronicBtn = document.getElementById("electronicBtn");
+var rapBtn = document.getElementById("rapBtn");
+var indieBtn = document.getElementById("indieBtn");
 
 //country
 var country = document.getElementById("country");
@@ -22,12 +23,12 @@ var countryTwo = document.getElementById("countryTwo");
 var countryThree = document.getElementById("countryThree");
 var countryFour = document.getElementById("countryFour");
 
-//Jazz
-var jazz = document.getElementById("jazz");
-var jazzOne = document.getElementById("jazzOne");
-var jazzTwo = document.getElementById("jazzTwo");
-var jazzThree = document.getElementById("jazzThree");
-var jazzFour = document.getElementById("jazzFour");
+//Pop
+var pop = document.getElementById("pop");
+var popOne = document.getElementById("popOne");
+var popTwo = document.getElementById("popTwo");
+var popThree = document.getElementById("popThree");
+var popFour = document.getElementById("popFour");
 
 //Rock
 var rock = document.getElementById("rock");
@@ -36,12 +37,19 @@ var rockTwo = document.getElementById("rockTwo");
 var rockThree = document.getElementById("rockThree");
 var rockFour = document.getElementById("rockFour");
 
-//Electronic 
-var electronic = document.getElementById("electronic");
-var elecOne = document.getElementById("elecOne");
-var elecTwo = document.getElementById("elecTwo");
-var elecThree = document.getElementById("elecThree");
-var elecFour = document.getElementById("elecFour");
+//Rap
+var rap = document.getElementById("rap");
+var rapOne = document.getElementById("rapOne");
+var rapTwo = document.getElementById("rapTwo");
+var rapThree = document.getElementById("rapThree");
+var rapFour = document.getElementById("rapFour");
+
+//Indie
+var indie = document.getElementById("indie");
+var indieOne = document.getElementById("indieOne");
+var indieTwo = document.getElementById("indieTwo");
+var indieThree = document.getElementById("indieThree");
+var indieFour = document.getElementById("indieFour");
 
 //Timeline
 var timeline = document.getElementById("timeline");
@@ -57,8 +65,8 @@ function initPage() {
   category.style.display = "none";
   country.style.display = "none";
   rock.style.display = "none";
-  jazz.style.display = "none";
-  electronic.style.display = "none";
+  pop.style.display = "none";
+  rap.style.display = "none";
   }
 initPage();
 
@@ -71,8 +79,8 @@ myProgress.style.display = "block";
 category.style.display = "block";
 country.style.display = "none";
 rock.style.display = "none";
-jazz.style.display = "none";
-electronic.style.display = "none";
+pop.style.display = "none";
+rap.style.display = "none";
 }
 
 //display sub-categories for Country 
@@ -97,25 +105,36 @@ function showRock() {
   timeline.style.display ="block";
   }
 
-//display sub-categories for Jazz
-jazzBtn.addEventListener("click", showJazz);
+//display sub-categories for pop
+popBtn.addEventListener("click", showPop);
 
-function showJazz() {
+function showPop() {
   firstPage.style.display = "none";
   myProgress.style.display = "block";
   category.style.display = "none";
-  jazz.style.display = "block";
+  pop.style.display = "block";
   timeline.style.display ="block";
   }
 
-//display sub-categories for Electronic
-electronicBtn.addEventListener("click", showElec);
+//display sub-categories for Rap
+rapBtn.addEventListener("click", showRap);
 
-function showElec() {
+function showRap() {
   firstPage.style.display = "none";
   myProgress.style.display = "block";
   category.style.display = "none";
-  electronic.style.display = "block";
+  rap.style.display = "block";
+  timeline.style.display ="block";
+  }
+
+  //display sub-categories for Indie
+indieBtn.addEventListener("click", showIndie);
+
+function showIndie() {
+  firstPage.style.display = "none";
+  myProgress.style.display = "block";
+  category.style.display = "none";
+  indie.style.display = "block";
   timeline.style.display ="block";
   }
 
