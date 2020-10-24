@@ -10,18 +10,38 @@ var myBar = document.getElementById("myBar");
 
 //music category
 var category = document.getElementById("category");
+var countryBtn = document.getElementById("countryBtn");
+var jazzBtn = document.getElementById("jazzBtn");
+var rockBtn = document.getElementById("rockBtn");
+var electronicBtn = document.getElementById("electronicBtn");
 
 //country
 var country = document.getElementById("country");
+var countryOne = document.getElementById("countryOne");
+var countryTwo = document.getElementById("countryTwo");
+var countryThree = document.getElementById("countryThree");
+var countryFour = document.getElementById("countryFour");
 
 //Jazz
 var jazz = document.getElementById("jazz");
+var jazzOne = document.getElementById("jazzOne");
+var jazzTwo = document.getElementById("jazzTwo");
+var jazzThree = document.getElementById("jazzThree");
+var jazzFour = document.getElementById("jazzFour");
 
 //Rock
 var rock = document.getElementById("rock");
+var rockOne = document.getElementById("rockOne");
+var rockTwo = document.getElementById("rockTwo");
+var rockThree = document.getElementById("rockThree");
+var rockFour = document.getElementById("rockFour");
 
 //Electronic 
 var electronic = document.getElementById("electronic");
+var elecOne = document.getElementById("elecOne");
+var elecTwo = document.getElementById("elecTwo");
+var elecThree = document.getElementById("elecThree");
+var elecFour = document.getElementById("elecFour");
 
 //Timeline
 var timeline = document.getElementById("timeline");
