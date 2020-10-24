@@ -1,5 +1,21 @@
-// select all elements
-const continue = document.getElementById("continue");
+// select all elements and create variables
+//firstPage
+var firstPage = document.getElementById("firstPage");
+var continueBtn = document.getElementById("continueBtn");
+
+//Progress Bar
+var myProgress = document.getElementById("myProgress");
+var myBar = document.getElementById("myBar");
+
+//Music Categories
+var category = document.getElementById("category");
+
+//Subcategories
+var subcategory = document.getElementById("subcategory");
+
+
+
+
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
