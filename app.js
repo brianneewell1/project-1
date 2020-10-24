@@ -50,12 +50,21 @@ var myRange = document.getElementById("myRange");
 //Footer
 var thanksBtn = document.getElementById("thanksBtn");
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
+//hide other pages upon loading
+function initPage() {
+  myProgress.style.display = "none";
+  category.style.display = "none";
+  country.style.display = "none";
+  rock.style.display = "none";
+  jazz.style.display = "none";
+  electronic.style.display = "none";
+  }
+
+//var output = document.getElementById("demo");
+//output.innerHTML = myRange.value; // Display the default slider value
 
 // Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
+myRange.oninput = function() {
   output.innerHTML = this.value;
 }
 
@@ -73,3 +82,4 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+initPage();
