@@ -26,15 +26,49 @@
      <div id="myProgress">
         <div id="myBar"></div>
       </div>
-    <!-- pick music category -->
-    <div id="subcategory" class="container is-visible">
-      <div class="row">
-        <h1>choose from the following music categories</h1>
-        <div style="padding:5px"><button type="button" class="">Country</button></div>
-        <div style="padding:5px"><button type="button" class="">Jazz</button></div>
-        <div style="padding:5px"><button type="button" class="">Rock</button></div>
-        <div style="padding:5px"><button type="button" class="">Electronic</button></div>
+    <!-- pick music category personal information -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
       </div>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+      </div>
+    </div>
+<!--click box for choosing music-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+    </div>
+    <!--another clickbox for subcategory -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+    </div>
+
     <!-- sub-category -->
     <div id="sub-category" class="container is-visible">
       <div class="row">
@@ -101,5 +135,5 @@
   
 </head>
 <body>
-  
+
 </html>
