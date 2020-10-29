@@ -9,17 +9,92 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
 </head>
 <body>
 
   <body>
-   
+   <div class="container">
     <!-- first page -->
     <div class="jumbotron text-center" id="firstPage" style="display:none">
 
       <h1>Songs of us </h1>
       <p>This is a music shuffling website for people who have difficulties picking music</p>
+
+    </div>
+  
+     <!--Progressive bar-->
+     <h4>Progressive Bar</h4>
+     <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+    <!-- pick music category personal information -->
+    <h4>Customer Information</h4>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Enter</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+      </div>
+    </div>
+<!--explaination of music categories for each category-->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h3 class="display-4">The History of Music</h3>
+    <p class="lead"></p>
+  </div>
+</div>
+<h4>Select Music Type and Suc-Categories</h4>
+<!--click box for choosing music-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music Type</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Pop</a>
+          <a class="dropdown-item" href="#">Jazz</a>
+          <a class="dropdown-item" href="#">Rock</a>
+          <a class="dropdown-item" href="#">Rap</a>
+          <a class="dropdown-item" href="#">Instrument</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+    </div>
+    <!--click box for choosing music-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pop Sub-category</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Disco</a>
+          <a class="dropdown-item" href="#">K-pop</a>
+          <a class="dropdown-item" href="#">J-pop</a>
+          <a class="dropdown-item" href="#">Dance-pop</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+    </div>
+    <!--another clickbox for subcategory for Jazz music-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jazz Sub-category</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Blue</a>
+          <a class="dropdown-item" href="#">Swing</a>
+          <a class="dropdown-item" href="#">Free Jazz</a>
+          <a class="dropdown-item" href="#">Bepop</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+=======
       <div style="padding:5px"><button id="continueBtn" type="button" class="btn btn-primary">Continue</button></div>
     </div>
   
@@ -39,67 +114,72 @@
         <div style="padding:5px"><button type="button" class="" id="electronicBtn">Electronic</button></div>
       </div>
       </div>
-    <!-- Country sub-category -->
-    <div id="country" class="container is-visible" syle="display:none">
-      <div class="row">
-        <div class="form-group">
-          <h1>Country Music</h1>
-          <div style="padding:5px"><button type="button" class="" id="countryOne">one</button></div>
-          <div style="padding:5px"><button type="button" class="" id="countryTwo">two</button></div>
-          <div style="padding:5px"><button type="button" class="" id="countryThree">three</button></div>
-          <div style="padding:5px"><button type="button" class="" id="countryFour">four</button></div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+    </div>
+
+<!--click box for choosing music Rock subcategory-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rock Sub-category<Sub-category></Sub-category></button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Classic</a>
+      <a class="dropdown-item" href="#">Country</a>
+      <a class="dropdown-item" href="#">Southern</a>
+      <a class="dropdown-item" href="#">Folk</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+</div>
+
+    <!--click box for choosing music R&B subcategory-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rap Sub-category<Sub-category></Sub-category></button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Trap</a>
+          <a class="dropdown-item" href="#">Gangsta rap</a>
+          <a class="dropdown-item" href="#">Boom-bap</a>
+          <a class="dropdown-item" href="#">Melodic rap</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
         </div>
       </div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button">
     </div>
- <!--Jazz sub-category -->
- <div id="jazz" class="container is-visible" style="display:none">
-  <div class="row">
-    <div class="form-group">
-      <h1>Jazz Music</h1>
-      <div style="padding:5px"><button type="button" class="" id="jazzOne">one</button></div>
-      <div style="padding:5px"><button type="button" class="" id="jazzTwo">two</button></div>
-      <div style="padding:5px"><button type="button" class="" id="jazzThree">three</button></div>
-      <div style="padding:5px"><button type="button" class="" id="jazzFour">four</button></div>
+    <!--click box for choosing music instrumental sub-category-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Instrument Sub-category</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Piano</a>
+          <a class="dropdown-item" href="#">Guita</a>
+          <a class="dropdown-item" href="#">Violin</a>
+          <a class="dropdown-item" href="#">Cello</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" aria-label="Text input with dropdown button">
     </div>
-  </div>
-</div>
-<!--Rock sub-category -->
-<div id="rock" class="container is-visible" style="display:none">
-  <div class="row">
-    <div class="form-group">
-      <h1>Rock Music</h1>
-      <div style="padding:5px"><button type="button" class="" id="rockOne">one</button></div>
-      <div style="padding:5px"><button type="button" class="" id="rockTwo">two</button></div>
-      <div style="padding:5px"><button type="button" class="" id="rockThree">three</button></div>
-      <div style="padding:5px"><button type="button" class="" id="rockFour">four</button></div>
-    </div>
-  </div>
-</div>
-<!--Electronic sub-category -->
-<div id="electronic" class="container is-visible" style="display:none">
-  <div class="row">
-    <div class="form-group">
-      <h1>Electronic Music</h1>
-      <div style="padding:5px"><button type="button" class="btn btn-primary wrong" id="elecOne">one</button></div>
-      <div style="padding:5px"><button type="button" class="btn btn-primary wrong" id="elecTwo">two</button></div>
-      <div style="padding:5px"><button type="button" class="btn btn-primary wrong" id="elecThree">three</button></div>
-      <div style="padding:5px"><button type="button" class="btn btn-primary right" id="elecFour">four</button></div>
-    </div>
-  </div>
-</div>
     <!-- Timeline -->
+
+    <h4>Select Music Year</h4>
+<div class="slidecontainer">
+  <input type="range" min="1950" max="2020" value="1" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div>
     <div class="slidecontainer" id="timeline" style="display:none">
         <input type="range" min="1950" max="2020" value="1" class="slider" id="myRange">
       </div>
-  
-    <!-- message box -->
+     <!-- message box -->
     <button type="button" class="collapsible" id="thanksBtn" style="display:none">Thank you for choosing song of Us</button>
     <div class="content">
       <p>This is an app to fulfill our project one requirement of coding bootcamp at the university of Utah. Four of us have been focus on this project for one week. Hope you like it</p>
     </div>
-    <button onclick="goBack()">Restart</button>
   <script src="./app.js"></script>
   
 </body>
 
-  
+   </html>
