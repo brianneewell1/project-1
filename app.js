@@ -1,146 +1,41 @@
-// select all elements and create variables
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
 
-//first page
-var firstPage = document.getElementById("firstPage");
-var continueBtn = document.getElementById("continueBtn");
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-//progress bar
-var myProgress = document.getElementById("myProgress");
-var myBar = document.getElementById("myBar");
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          src: "https://www.youtube.com/playlist?list=PLXeNHz9rWpLhgXdMR7xQG6kLvxswCWPN0",
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
 
-//music category
-var category = document.getElementById("category");
-var countryBtn = document.getElementById("countryBtn");
-var popBtn = document.getElementById("popBtn");
-var rockBtn = document.getElementById("rockBtn");
-var rapBtn = document.getElementById("rapBtn");
-var indieBtn = document.getElementById("indieBtn");
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
 
-//country
-var country = document.getElementById("country");
-var countryOne = document.getElementById("countryOne");
-var countryTwo = document.getElementById("countryTwo");
-var countryThree = document.getElementById("countryThree");
-var countryFour = document.getElementById("countryFour");
-
-//Pop
-var pop = document.getElementById("pop");
-var popOne = document.getElementById("popOne");
-var popTwo = document.getElementById("popTwo");
-var popThree = document.getElementById("popThree");
-var popFour = document.getElementById("popFour");
-
-//Rock
-var rock = document.getElementById("rock");
-var rockOne = document.getElementById("rockOne");
-var rockTwo = document.getElementById("rockTwo");
-var rockThree = document.getElementById("rockThree");
-var rockFour = document.getElementById("rockFour");
-
-//Rap
-var rap = document.getElementById("rap");
-var rapOne = document.getElementById("rapOne");
-var rapTwo = document.getElementById("rapTwo");
-var rapThree = document.getElementById("rapThree");
-var rapFour = document.getElementById("rapFour");
-
-//Indie
-var indie = document.getElementById("indie");
-var indieOne = document.getElementById("indieOne");
-var indieTwo = document.getElementById("indieTwo");
-var indieThree = document.getElementById("indieThree");
-var indieFour = document.getElementById("indieFour");
-
-//Timeline
-var timeline = document.getElementById("timeline");
-var myRange = document.getElementById("myRange");
-
-//Footer
-var thanksBtn = document.getElementById("thanksBtn");
-
-//hide other pages upon loading
-function initPage() {
-  firstPage.style.display ="block";
-  myProgress.style.display = "none";
-  category.style.display = "none";
-  country.style.display = "none";
-  rock.style.display = "none";
-  pop.style.display = "none";
-  rap.style.display = "none";
-  }
-initPage();
-
-//display music categories when continue is clicked
-continueBtn.addEventListener("click", showMusic);
-
-function showMusic() {
-firstPage.style.display = "none";
-myProgress.style.display = "block";
-category.style.display = "block";
-country.style.display = "none";
-rock.style.display = "none";
-pop.style.display = "none";
-rap.style.display = "none";
-}
-
-//display sub-categories for Country 
-countryBtn.addEventListener("click", showCountry);
-
-function showCountry() {
-  firstPage.style.display = "none";
-  myProgress.style.display = "block";
-  category.style.display = "none";
-  country.style.display = "block";
-  timeline.style.display ="block";
-  }
-
-//display sub-categories for Rock
-rockBtn.addEventListener("click", showRock);
-
-function showRock() {
-  firstPage.style.display = "none";
-  myProgress.style.display = "block";
-  category.style.display = "none";
-  rock.style.display = "block";
-  timeline.style.display ="block";
-  }
-
-//display sub-categories for pop
-popBtn.addEventListener("click", showPop);
-
-function showPop() {
-  firstPage.style.display = "none";
-  myProgress.style.display = "block";
-  category.style.display = "none";
-  pop.style.display = "block";
-  timeline.style.display ="block";
-  }
-
-//display sub-categories for Rap
-rapBtn.addEventListener("click", showRap);
-
-function showRap() {
-  firstPage.style.display = "none";
-  myProgress.style.display = "block";
-  category.style.display = "none";
-  rap.style.display = "block";
-  timeline.style.display ="block";
-  }
-
-  //display sub-categories for Indie
-indieBtn.addEventListener("click", showIndie);
-
-function showIndie() {
-  firstPage.style.display = "none";
-  myProgress.style.display = "block";
-  category.style.display = "none";
-  indie.style.display = "block";
-  timeline.style.display ="block";
-  }
-
-  //Go Back Button
-function goBack() {
-  window.history.go();
-}
-
-
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    
