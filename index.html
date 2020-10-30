@@ -17,19 +17,14 @@
   <body>
    <div class="container">
     <!-- first page -->
-    <div class="jumbotron text-center" id="firstPage" style="display:none">
+    <div class="jumbotron text-center" id="firstPage">
 
       <h1>Songs of us </h1>
       <p>This is a music shuffling website for people who have difficulties picking music</p>
 
     </div>
   
-     <!--Progressive bar-->
-     <h4>Progressive Bar</h4>
-     <div id="myProgress">
-        <div id="myBar"></div>
-      </div>
-    <!-- pick music category personal information -->
+     <!-- pick music category personal information -->
     <h4>Customer Information</h4>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
@@ -47,87 +42,57 @@
 <!--explaination of music categories for each category-->
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h3 class="display-4">The History of Music</h3>
+    <h3 class="display-4">Music Categories</h3>
     <p class="lead"></p>
   </div>
 </div>
-<h4>Select Music Type and Suc-Categories</h4>
-<!--click box for choosing music-->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music Type</button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Pop</a>
-          <a class="dropdown-item" href="#">Jazz</a>
-          <a class="dropdown-item" href="#">Rock</a>
-          <a class="dropdown-item" href="#">Rap</a>
-          <a class="dropdown-item" href="#">Instrument</a>
-          <div role="separator" class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      </div>
-      <input type="text" class="form-control" aria-label="Text input with dropdown button">
-    </div>
-    <!--click box for choosing music-->
+<h4>Select Music Type and Sub-Categories</h4>
+    <!--click box for pop music-->
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pop Sub-category</button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Disco</a>
-          <a class="dropdown-item" href="#">K-pop</a>
-          <a class="dropdown-item" href="#">J-pop</a>
-          <a class="dropdown-item" href="#">Dance-pop</a>
+          <a class="dropdown-item">Disco</a>
+          <a class="dropdown-item">K-pop</a>
+          <a class="dropdown-item">J-pop</a>
+          <a class="dropdown-item">Dance-pop</a>
           <div role="separator" class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
+          <a class="dropdown-item">All</a>
         </div>
       </div>
-      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+      <!---<input id="query" type="text" class="form-control" aria-label="Text input with dropdown button">!-->
+      <form id="search-term" class="form-control">
+        <input id="query" type="text">
+        <input type="submit" value="Submit">
+      </form>
     </div>
-    <!--another clickbox for subcategory for Jazz music-->
+              <!--another clickbox for subcategory for Jazz music-->
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jazz Sub-category</button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Blue</a>
-          <a class="dropdown-item" href="#">Swing</a>
-          <a class="dropdown-item" href="#">Free Jazz</a>
-          <a class="dropdown-item" href="#">Bepop</a>
+          <a class="dropdown-item">Blues</a>
+          <a class="dropdown-item">Swing</a>
+          <a class="dropdown-item">Free Jazz</a>
+          <a class="dropdown-item">Bepop</a>
           <div role="separator" class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-=======
-      <div style="padding:5px"><button id="continueBtn" type="button" class="btn btn-primary">Continue</button></div>
-    </div>
-  
-     <!--Progressive bar-->
-     <div id="myProgress" style="display:none">
-        <div id="myBar"></div>
-      </div>
-    <!-- pick music category -->
-
-    <div id="category" style="display:none" class="container">
-
-      <div class="row">
-        <h1>choose from the following music categories</h1>
-        <div style="padding:5px"><button type="button" class="" id="countryBtn">Country</button></div>
-        <div style="padding:5px"><button type="button" class="" id="jazzBtn">Jazz</button></div>
-        <div style="padding:5px"><button type="button" class="" id="rockBtn">Rock</button></div>
-        <div style="padding:5px"><button type="button" class="" id="electronicBtn">Electronic</button></div>
-      </div>
+          <a class="dropdown-item">All</a>
+        </div>
       </div>
       <input type="text" class="form-control" aria-label="Text input with dropdown button">
     </div>
-
-<!--click box for choosing music Rock subcategory-->
+  
+    <!--click box for choosing music Rock subcategory-->
 <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rock Sub-category<Sub-category></Sub-category></button>
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rock Sub-category</button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Classic</a>
-      <a class="dropdown-item" href="#">Country</a>
-      <a class="dropdown-item" href="#">Southern</a>
-      <a class="dropdown-item" href="#">Folk</a>
+      <a class="dropdown-item">Classic</a>
+      <a class="dropdown-item">Country</a>
+      <a class="dropdown-item">Southern</a>
+      <a class="dropdown-item">Folk</a>
       <div role="separator" class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
+      <a class="dropdown-item">All</a>
     </div>
   </div>
   <input type="text" class="form-control" aria-label="Text input with dropdown button">
@@ -138,12 +103,12 @@
       <div class="input-group-prepend">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rap Sub-category<Sub-category></Sub-category></button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Trap</a>
-          <a class="dropdown-item" href="#">Gangsta rap</a>
-          <a class="dropdown-item" href="#">Boom-bap</a>
-          <a class="dropdown-item" href="#">Melodic rap</a>
+          <a class="dropdown-item">Trap</a>
+          <a class="dropdown-item">Gangsta rap</a>
+          <a class="dropdown-item">Boom-bap</a>
+          <a class="dropdown-item">Melodic rap</a>
           <div role="separator" class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
+          <a class="dropdown-item">All</a>
         </div>
       </div>
       <input type="text" class="form-control" aria-label="Text input with dropdown button">
@@ -153,12 +118,12 @@
       <div class="input-group-prepend">
         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Instrument Sub-category</button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Piano</a>
-          <a class="dropdown-item" href="#">Guita</a>
-          <a class="dropdown-item" href="#">Violin</a>
-          <a class="dropdown-item" href="#">Cello</a>
+          <a class="dropdown-item">Piano</a>
+          <a class="dropdown-item">Guitar</a>
+          <a class="dropdown-item">Violin</a>
+          <a class="dropdown-item">Cello</a>
           <div role="separator" class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
+          <a class="dropdown-item">All</a>
         </div>
       </div>
       <input type="text" class="form-control" aria-label="Text input with dropdown button">
@@ -179,7 +144,14 @@
       <p>This is an app to fulfill our project one requirement of coding bootcamp at the university of Utah. Four of us have been focus on this project for one week. Hope you like it</p>
     </div>
   <script src="./app.js"></script>
-  
+
+  <!--The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <div id="search-results">
+    </div>
 </body>
 
    </html>
