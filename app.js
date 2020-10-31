@@ -75,3 +75,33 @@ function showResults(results) {
   });
   $("#search-results").html(html);
 }
+
+//itunes api(test)
+const input = document.querySelector("#search")
+const output = document.querySelector("#output")
+const button = document.querySelector("#searchbtn")
+
+const getContent = (search)=>{
+  console.log("getContent")
+  getDataFromItunes()
+  console.log(search)
+}
+
+function getDataFromItunes(){
+  const url = 'https://itunes.apple.com/search?term='+input.value+'=musicVido'
+  const cors = 'https://cors-anywhere.herokuapp.com'
+  // const url = 'https://itunes.apple.com/search?term=taylor+swift&country=ca'
+  // const url = 'https://reqres.in/api/products/3'
+  
+  fetch(url, { 
+    // mode: 'no-cors',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8'
+    }})
+ .then( async (response) => {
+    let result = await response.json(); // read body as json
+    console.log(result)
+ }).catch(e => console.log('err', e))
+}
+
+button.addEventListener('click', () => getDataFromItunes())
