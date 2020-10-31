@@ -2,7 +2,7 @@
 $(document).ready(function () {
   $("#Rock").click(function (event) {
     event.preventDefault();
-    var searchTerm = $("#query").val();
+
     getRequest("rock music");
   });
   $("#Pop").click(function (event) {
