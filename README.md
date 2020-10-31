@@ -1,20 +1,12 @@
-<<<<<<< HEAD
-=======
-# project-1
+Title: Random MusicBox
 
->>>>>>> f4ca1aa1d9054b5dd662511637dfdfa6ba10b9d1
-project Title: Random MusicBox
+Project Description: Random music selector. Users are able to select the genre of music they would like to listen to and then our app suggests a random song based on their input.  
 
-project description: music randomizer w/ catagory buttons 
+User Story: User is having issues choosing what to listen to. Using our app, they select a genre of music they would like to hear and a song is suggested for them.
 
-User Story: user is having issues choosing what to listen too, our app will fix that.
+Wireframe or Sketch of the design: Our project is made up from three different variables: checklist, the function button, and free music data APIs. 
 
-wireframe or sketch of the design: our project is made up from three diffrent variables: checklist, the function button, and free music data APIs. 
+APIs to be used: https://rapidapi.com/volodimir.kudriachenko/api/iTunes, https://www.googleapis.com/youtube/v3/search
 
-APIs to be used: https://rapidapi.com/apidojo/api/shazam, https://rapidapi.com/volodimir.kudriachenko/api/iTunes, and https://rapidapi.com/search/spotify
+Rough Breakdown: When the user selects a category, then clicks the randomizer button they will be greeted with a random song.
 
-<<<<<<< HEAD
-Rough breakdown: WHEN the user selects a catagory, then clicks the randomizer button they will be greeted with a random song.
-=======
-Rough breakdown: WHEN the user selects a catagory, then clicks the randomizer button they will be greeted with a random song.
->>>>>>> f4ca1aa1d9054b5dd662511637dfdfa6ba10b9d1
