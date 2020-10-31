@@ -56,7 +56,7 @@ function getRequest(searchTerm) {
   var url = "https://www.googleapis.com/youtube/v3/search";
   var params = {
     part: "snippet",
-    key: "AIzaSyAZbcpLkq2DEmBTLkQX-3XeqTcfi4k83qQ",
+    key: "AIzaSyCcsfh3PwLkNM4GQgqrGRwKhpUHmAyPME4",
     q: searchTerm,
   };
 
