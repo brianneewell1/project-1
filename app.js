@@ -30,6 +30,26 @@ $(document).ready(function () {
 
     getRequest("Thrash Metal music");
   });
+  $("#Edm").click(function (event) {
+    event.preventDefault();
+
+    getRequest("Edm music");
+  });
+  $("#gangstaRap").click(function (event) {
+    event.preventDefault();
+
+    getRequest("Gangsta Rap music");
+  });
+  $("#country").click(function (event) {
+    event.preventDefault();
+
+    getRequest("Country music");
+  });
+  $("#soul").click(function (event) {
+    event.preventDefault();
+
+    getRequest("Soul music");
+  });
 });
 
 function getRequest(searchTerm) {
