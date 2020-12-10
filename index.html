@@ -16,16 +16,14 @@
   </head>
 
   <body>
-    <div class="container">
-      <!-- first page -->
-      <div class="jumbotron text-center" id="firstPage">
-        <h1>Songs of us</h1>
-        <p>
-          This is a music shuffling website for people who have difficulties
-          picking music
-        </p>
-      </div>
+   <div class="container">
+    <!-- first page -->
+    <div class="jumbotron text-center" id="firstPage" style="display:none">
 
+      <h1>Songs of us </h1>
+      <p>This is a music shuffling website for people who have difficulties picking music</p>
+
+    </div>
       <!-- pick music category personal information -->
       <h4>Customer Information</h4>
       <div class="input-group mb-3">
@@ -85,35 +83,11 @@
         <!---<input id="query" type="text" class="form-control" aria-label="Text input with dropdown button">!-->
         <form id="search-term" class="form-control">
           <input id="query" type="text" />
-          <input type="submit" value="Submit" />
+          <button id="searchbtn">submit</button>>
         </form>
       </div>
       
 
-      <!-- Timeline -->
-
-      <h4>Select Music Year</h4>
-      <div class="slidecontainer">
-        <input
-          type="range"
-          min="1950"
-          max="2020"
-          value="1"
-          class="slider"
-          id="myRange"
-        />
-        <p>Value: <span id="demo"></span></p>
-      </div>
-      <div class="slidecontainer" id="timeline" style="display: none">
-        <input
-          type="range"
-          min="1950"
-          max="2020"
-          value="1"
-          class="slider"
-          id="myRange"
-        />
-      </div>
       <!-- message box -->
       <button
         type="button"
